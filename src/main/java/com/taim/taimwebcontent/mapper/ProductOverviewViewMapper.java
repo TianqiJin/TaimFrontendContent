@@ -1,7 +1,7 @@
 package com.taim.taimwebcontent.mapper;
 
-import com.taim.taimwebcontent.model.ProductOverviewView;
 import com.taim.taimbackendservicemodel.ProductDTO;
+import com.taim.taimwebcontent.model.ProductOverviewView;
 import org.springframework.stereotype.Component;
 
 @Component

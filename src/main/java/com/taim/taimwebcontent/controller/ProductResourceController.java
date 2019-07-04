@@ -1,12 +1,12 @@
 package com.taim.taimwebcontent.controller;
 
+import com.taim.taimbackendservicejavaclient.client.ProductClient;
 import com.taim.taimwebcontent.mapper.CreateProductInputMapper;
 import com.taim.taimwebcontent.mapper.ProductDetailMapper;
 import com.taim.taimwebcontent.mapper.ProductOverviewViewMapper;
 import com.taim.taimwebcontent.model.CreateProductInput;
 import com.taim.taimwebcontent.model.ProductDetailView;
 import com.taim.taimwebcontent.model.ProductOverviewView;
-import com.taim.taimbackendservicejavaclient.client.ProductClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,7 +36,7 @@ public class ProductResourceController {
             value = "/products",
             params = "action=getAll"
     )
-    public List<ProductOverviewView> getAllProducts() {
+    public List<ProductOverviewView> getAllProducts() throws InterruptedException {
         return this.productClient.getAllProducts().stream()
                 .map(productOverviewViewMapper::map)
                 .collect(Collectors.toList());

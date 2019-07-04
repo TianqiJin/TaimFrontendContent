@@ -1,7 +1,7 @@
 package com.taim.taimwebcontent.mapper;
 
-import com.taim.taimwebcontent.model.CreateQuotationInput;
 import com.taim.taimbackendservicemodel.CreateQuotationDTO;
+import com.taim.taimwebcontent.model.CreateQuotationInput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -25,9 +25,12 @@ public class CreateQuotationDTOMapper {
                 .dueDate(createQuotationInput.getDueDate())
                 .quotationDate(createQuotationInput.getQuotationDate())
                 .quotationId(createQuotationInput.getQuotationId())
+                .billFromAddress(createQuotationInput.getBillFromAddress())
+                .billToAddress(createQuotationInput.getBillToAddress())
                 .createQuotationDetailDTOList(createQuotationInput.getCreateQuotationDetailItems().stream()
                         .map(this.createQuotationDetailDTOMapper::map)
                         .collect(Collectors.toList()))
+                .submit(createQuotationInput.isSubmit())
                 .build();
     }
 }

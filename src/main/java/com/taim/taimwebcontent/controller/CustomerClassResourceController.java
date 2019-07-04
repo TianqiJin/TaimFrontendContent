@@ -1,8 +1,8 @@
 package com.taim.taimwebcontent.controller;
 
+import com.taim.taimbackendservicejavaclient.client.CustomerClassClient;
 import com.taim.taimwebcontent.mapper.CustomerClassViewMapper;
 import com.taim.taimwebcontent.model.CustomerClassView;
-import com.taim.taimbackendservicejavaclient.client.CustomerClassClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

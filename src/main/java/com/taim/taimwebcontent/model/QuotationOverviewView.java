@@ -1,23 +1,22 @@
-package com.taim.taimwebcontent.model.quotationdetail;
+package com.taim.taimwebcontent.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class QuotationSummary {
+@Builder
+public class QuotationOverviewView {
     private String quotationId;
     private Date quotationDate;
-    private String billFromAddress;
-    private String billToAddress;
     private Date dueDate;
-    private String createdBy;
     private String status;
-    private String note;
+    private BigDecimal total;
+    private BigDecimal taxTotal;
 }

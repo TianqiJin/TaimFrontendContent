@@ -1,7 +1,7 @@
 package com.taim.taimwebcontent.mapper;
 
-import com.taim.taimwebcontent.model.CustomerClassView;
 import com.taim.taimbackendservicemodel.CustomerClassDTO;
+import com.taim.taimwebcontent.model.CustomerClassView;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

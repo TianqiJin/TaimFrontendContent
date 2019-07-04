@@ -1,7 +1,7 @@
 package com.taim.taimwebcontent.mapper;
 
-import com.taim.taimwebcontent.model.CreateProductInput;
 import com.taim.taimbackendservicemodel.CreateProductDTO;
+import com.taim.taimwebcontent.model.CreateProductInput;
 import org.springframework.stereotype.Component;
 
 @Component

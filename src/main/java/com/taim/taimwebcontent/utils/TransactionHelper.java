@@ -4,7 +4,7 @@ import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TransactionIDUtils {
+public class TransactionHelper {
     public static final Integer QUOTATION_ID_COUNT = 12;
 
     public String generateRandomString(String prefix, int length, String suffix) {

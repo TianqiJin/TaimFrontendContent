@@ -1,7 +1,7 @@
 package com.taim.taimwebcontent.mapper;
 
-import com.taim.taimwebcontent.model.quotationdetail.QuotationCustomer;
 import com.taim.taimbackendservicemodel.CustomerDTO;
+import com.taim.taimwebcontent.model.quotationdetail.QuotationCustomer;
 import org.springframework.stereotype.Component;
 
 @Component
